@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buffalo Bills Fan Site</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .logo {
+        max-width: 80%; /* Adjust the image width as needed */
+        height: auto;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to the Buffalo Bills Fan Site!</h1>
+<button class="button" onclick="playAudio()">Go Bills</button>
+<p id="message"></p>
+<img src="download.jpg" alt="Buffalo Bills Logo" class="logo">
+
+<audio id="myAudio">
+  <source src="buffalo-bills-shout-song-fight-song-101soundboards.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+function playAudio() {
+    var audio = document.getElementById("myAudio");
+
+    if (audio.paused) {
+        audio.play();
+        document.querySelector('.button').innerText = "Pause Song";
+    } else {
+        audio.pause();
+        document.querySelector('.button').innerText = "Go Bills";
+    }
+}
+</script>
+</body>
+</html>
