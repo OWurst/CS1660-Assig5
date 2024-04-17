@@ -26,7 +26,7 @@ jobs:
         with:
           credentials_json: '${{ secrets.GCLOUD_SECRET }}'
           #workload_identity_provider: 'projects/506642149183/locations/global/workloadIdentityPools/github/providers/my-repo'
-          service_account: 'github-actions-service-acc@wurst-owen1660p5.iam.gserviceaccount.com'
+          #service_account: 'github-actions-service-acc@wurst-owen1660p5.iam.gserviceaccount.com'
 
       # upload files to GCS
       - id: 'upload-static-files'
