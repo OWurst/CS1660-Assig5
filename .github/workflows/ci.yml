@@ -33,4 +33,4 @@ jobs:
         with:
           path: 'files'
           destination: 'omw3-a5bucket'
-          parent: false'
+          parent: false
